@@ -1,0 +1,240 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0
+}
+
+.background{
+    padding: 10px;
+    min-height: 100vh;
+    min-width: fit-content;
+    background-color:hsla(0,5%,4%,1);
+    background-color:hsla(0,0%,0%,1);
+background-image:
+radial-gradient(at 80% 43%, hsla(289,39%,19%,0.52) 0px, transparent 50%),
+radial-gradient(at 38% 74%, hsla(32,51%,26%,0.3) 0px, transparent 50%),
+radial-gradient(at 20% 37%, hsla(289,39%,19%,0.52) 0px, transparent 50%);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.menu-bar {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.home-button {
+    margin-left: 25px;
+    background: none;
+    border: none;
+    margin-right: auto;
+    color: white;
+    font-weight: bold;
+    font-family: Major Mono Display;
+    transition: color 0.4s ease;
+    font-size: 18px;
+}
+
+.home-button:hover {
+    color: rgb(228, 189, 72)
+}
+
+.disc, .features, .pricing {
+    color: white;
+    font-family: work sans;
+    text-decoration: none;
+}
+
+.disc:hover{
+    color: rgb(228, 189, 72)
+} 
+.features:hover{
+    color: rgb(228, 189, 72)
+}  
+.pricing:hover {
+    color: rgb(228, 189, 72)
+}
+
+.login-button, .signup-button {
+    font-family: work sans;
+}
+
+.login-button {
+    background: none;
+    border-radius: 100px;
+    backdrop-filter: blur(3px);
+    padding: 10px 20px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    transition: color 0.4s;
+    transition: background-color 0.3s;
+    transition: box-shadow 0.3s;
+    border: 1px solid rgba(200, 200, 200, 0.5);
+}
+
+.signup-button {
+    margin-right: 10px;
+    background:rgb(239, 203, 55);
+    border:1px;
+    border-radius:100px;
+    padding: 10px;
+    transition: color 0.4s;
+    transition: background-color 0.3s;
+}
+
+.login-button:hover {
+    background-color: rgb(239, 203, 55);
+    color: black;
+}
+
+.signup-button:hover {
+    background-color: black;
+    color: rgb(228, 189, 72);
+}
+
+.signup-button:active, .login-button:active {
+    transform: scale(0.9);
+}
+
+@media screen and (max-width: 450px) {
+    .disc, .features, .pricing { display: none;}
+    .image-shit {display: none;}
+}
+
+.search-box{
+    margin-top: 35px;
+    width: fit-content;
+    display:flex;
+    align-items:center;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 60px;
+    padding: 10px 10px;
+    border: 1px solid rgba(200, 200, 200, 0.3);
+}
+
+.desc1,.desc2,.main-heading{
+    margin-top: 20px;
+    color:rgb(163, 163, 163);
+}
+
+.desc1,.desc2{
+    font-family: work sans;
+    width: 400px;
+}
+
+.desc1 {
+    color: rgb(228, 189, 72);
+}
+
+.main-heading{
+    font-size: 30px;
+    font:"open sans", sans-serif;
+    font-weight: bold;
+    color:white;
+    font-family: ubuntu;
+    width: 400px;
+}
+
+.inside-sb{
+    background: none;
+    border: none;
+    outline:none;
+    color: white;
+    padding: 3px;
+    margin: -5px 0px;
+    font-size: 15px;
+    font-family: work sans;
+}
+
+.app-embeds {
+    display: flex;
+    flex-direction: row;
+    margin:auto;
+    margin-top: 100px;
+    width: fit-content;
+    align-items: center;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: rgba(200, 200, 200, 0.1);
+    border: 1px solid rgba(100, 100, 100, 0.5);
+    backdrop-filter: blur(10px);
+}
+
+.text-in-ae{
+    margin-right:auto;
+    color:white;
+    font:30px;
+    font-family: work sans;
+    width:100px;
+    margin-left:10px;
+}
+
+.join-button{
+    background:rgb(228, 189, 72);
+    margin-left: 10px;
+    border-radius: 100px;
+    border: none;
+    padding: 10px 15px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: color 0.4s;
+    transition: background-color 0.3s;
+    font-family: work sans;
+    box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.join-button:hover {
+    background-color: black;
+    color: rgb(228, 189, 72);
+}
+
+.main {
+    margin-right: auto;
+}
+
+.main-box {
+    display: flex;
+    margin-left: 200px;
+    align-items: center;
+    margin-top:  20px;
+}
+
+.image-shit {
+    margin-right: auto;
+}
+
+.water {
+    background-image: url('ass/wet.png');
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+}
+
+.fa-solid {
+    color: white;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+.fa-brands {
+    color: wheat;
+    margin-right: 10px;
+}
+
+.fa-face-smile {
+    margin: 0px;
+    color: rgb(228, 189, 72);
+}
+
+.fa-meteor {
+    margin: 0px;
+}
